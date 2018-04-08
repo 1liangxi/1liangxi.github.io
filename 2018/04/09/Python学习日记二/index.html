@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.2 -->
+    <script>
+        window.materialVersion = "1.5.2"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+    <link rel="dns-prefetch" href="https://cdn1.lncld.net"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            Python学习日记二 | 
+        
+        不知名小站
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/ico.png">
+    <link rel="icon" href="/img/ico.png">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content=",Python">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?MKetZV3cUTfDxvMffaOezg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="不知名小站">
+    <meta name="msapplication-starturl" content="http://yoursite.com/2018/04/09/Python学习日记二/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="不知名小站">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/ico.png">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://yoursite.com/2018/04/09/Python学习日记二/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="Python学习日记二 | 不知名小站">
+    <meta property="og:image" content="/img/ico.png">
+    <meta property="og:description" content="">
+    <meta property="og:article:tag" content="Python"> 
+
+    
+        <meta property="article:published_time" content="Mon Apr 09 2018 00:48:17 GMT+0800">
+        <meta property="article:modified_time" content="Mon Apr 09 2018 01:18:25 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="http://yoursite.com/2018/04/09/Python学习日记二/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
+</head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#一、列表"><span class="post-toc-text">一、列表</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1、定义列表："><span class="post-toc-text">1、定义列表：</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2、切片（顾头不顾尾）"><span class="post-toc-text">2、切片（顾头不顾尾）</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#3、追加"><span class="post-toc-text">3、追加</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#4、插入"><span class="post-toc-text">4、插入</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#5、修改"><span class="post-toc-text">5、修改</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#6、删除"><span class="post-toc-text">6、删除</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#7、扩展"><span class="post-toc-text">7、扩展</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#8、拷贝（列表中自带的copy为浅copy）"><span class="post-toc-text">8、拷贝（列表中自带的copy为浅copy）</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#9、统计"><span class="post-toc-text">9、统计</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#10、排序"><span class="post-toc-text">10、排序</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#11、翻转"><span class="post-toc-text">11、翻转</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#12、获取下标"><span class="post-toc-text">12、获取下标</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#二、元组"><span class="post-toc-text">二、元组</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1、统计"><span class="post-toc-text">1、统计</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2、获取下标"><span class="post-toc-text">2、获取下标</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#三、字符串的操作"><span class="post-toc-text">三、字符串的操作</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#四、字典操作"><span class="post-toc-text">四、字典操作</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1、增加"><span class="post-toc-text">1、增加</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2、修改"><span class="post-toc-text">2、修改</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#3、删除"><span class="post-toc-text">3、删除</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#4、查找"><span class="post-toc-text">4、查找</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#5、其他操作"><span class="post-toc-text">5、其他操作</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#6、循环字典"><span class="post-toc-text">6、循环字典</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#五、集合"><span class="post-toc-text">五、集合</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#集合主要用于："><span class="post-toc-text">集合主要用于：</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#常用操作："><span class="post-toc-text">常用操作：</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#六、文件操作"><span class="post-toc-text">六、文件操作</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1、打开文件"><span class="post-toc-text">1、打开文件</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2、读取文件内容"><span class="post-toc-text">2、读取文件内容</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#3、文件句柄"><span class="post-toc-text">3、文件句柄</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#4、修改文件"><span class="post-toc-text">4、修改文件</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#七、字符的编码与转码"><span class="post-toc-text">七、字符的编码与转码</span></a></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                Python学习日记二
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>1liangxi</strong>
+        <span>4月 09, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/Python/">Python</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Python学习日记二&url=http://yoursite.com/2018/04/09/Python学习日记二/index.html&pic=http://yoursite.com/img/ico.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Python学习日记二&url=http://yoursite.com/2018/04/09/Python学习日记二/index.html&via=1liangxi" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/04/09/Python学习日记二/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2018/04/09/Python学习日记二/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>这篇博客主要介绍各种常用类型（列表，元组，字符串，字典，集合）的基本操作，以及文件的操作，最后说一下字符的编码和转码。 </p>
+<p>主要参考Alex老师博客：<a href="http://www.cnblogs.com/alex3714/articles/5717620.html" target="_blank" rel="noopener">http://www.cnblogs.com/alex3714/articles/5717620.html</a></p>
+<h2 id="一、列表"><a href="#一、列表" class="headerlink" title="一、列表"></a>一、<strong>列表</strong></h2><hr>
+<p>列表是用[ ]将多个元素（数据类型可相同可不同）括起来的一种数据类型，各元素用”,”分隔。</p>
+<p>列表可以嵌套任何东西。</p>
+<h4 id="1、定义列表："><a href="#1、定义列表：" class="headerlink" title="1、定义列表："></a>1、定义列表：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">names = [‘1liangxi’,’Alex’,’Tom’]</span><br></pre></td></tr></table></figure>
+<p>列表可通过下标来取出元素：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">data = names[0]</span><br></pre></td></tr></table></figure>
+<p>还可以倒着取：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">data = names[<span class="number">-1</span>]<span class="comment">#负号代表倒着取，-1代表倒数第一个，-2代表倒数第二个，-3代表倒数第三个.....</span></span><br></pre></td></tr></table></figure>
+<h4 id="2、切片（顾头不顾尾）"><a href="#2、切片（顾头不顾尾）" class="headerlink" title="2、切片（顾头不顾尾）"></a>2、切片（顾头不顾尾）</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">names = [“<span class="number">1l</span>iangxi”,”Alex”,”Tom”,”Jerry”]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">print(names[<span class="number">0</span>:<span class="number">3</span>])<span class="comment">#顾头：从0开始取。不顾尾：3不取，只取到2</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#输出：[“1liangxi”,”Alex”,“Tom”]</span></span><br><span class="line"></span><br><span class="line"> </span><br><span class="line">print(names[<span class="number">0</span>:])<span class="comment">#想取到最后一个只能这么取，不能写-1，因为不顾尾</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#输出：[“1liangxi”,”Alex”,“Tom”,”Jerry”]</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">print(names[<span class="number">0</span>::<span class="number">2</span>]) <span class="comment">#每隔(2-1)个元素，从0一直取到最后。</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#输出 ['1liangxi', 'Tom']</span></span><br></pre></td></tr></table></figure>
+<h4 id="3、追加"><a href="#3、追加" class="headerlink" title="3、追加"></a>3、追加</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">names = [“1liangxi”,”Alex”,”Tom”,”Jerry”]</span><br><span class="line"></span><br><span class="line">names.append(“Tony”) #追加只能追加到列表的最后</span><br><span class="line"></span><br><span class="line">print(names)</span><br><span class="line"></span><br><span class="line">#输出： [&apos;1liangxi&apos;, &apos;Alex&apos;, &apos;Tom&apos;, &apos;Jerry&apos;, &apos;Tony&apos;]</span><br></pre></td></tr></table></figure>
+<h4 id="4、插入"><a href="#4、插入" class="headerlink" title="4、插入"></a>4、插入</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">names = [“1liangxi”,”Alex”,”Tom”,”Jerry”]</span><br><span class="line"></span><br><span class="line">names.insert(2,”Tony”) #前面的数字代表想插入列表的位置下标，后面代表想插入的值。</span><br><span class="line"></span><br><span class="line">print(names)</span><br><span class="line"></span><br><span class="line">#输出： [&apos;1liangxi&apos;, &apos;Alex&apos;, &apos;Tony&apos;, &apos;Tom&apos;, &apos;Jerry&apos;]</span><br></pre></td></tr></table></figure>
+<h4 id="5、修改"><a href="#5、修改" class="headerlink" title="5、修改"></a>5、修改</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">names = [“1liangxi”,”Alex”,”Tom”,”Jerry”]</span><br><span class="line"></span><br><span class="line">names[2] = “Tony” #修改直接替换掉想修改的值就好</span><br><span class="line"></span><br><span class="line">print(names)</span><br><span class="line"></span><br><span class="line">#输出： [&apos;1liangxi&apos;, &apos;Alex&apos;, &apos;Tony&apos;, &apos;Jerry&apos;]</span><br></pre></td></tr></table></figure>
+<h4 id="6、删除"><a href="#6、删除" class="headerlink" title="6、删除"></a>6、删除</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">names = [“1liangxi”,”Alex”,”Tom”,”Jerry”]</span><br></pre></td></tr></table></figure>
+<p>删除有3种方法</p>
+<ul>
+<li><p>del 删除引用</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">del</span> names[<span class="number">2</span>] <span class="comment">#下标</span></span><br><span class="line"></span><br><span class="line">print(names)</span><br><span class="line"></span><br><span class="line"><span class="comment">#输出 ['1liangxi', 'Alex', 'Jerry']</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>remove( )</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">names.remove(“Tom”) #指定删除元素</span><br><span class="line"></span><br><span class="line">print(names)</span><br><span class="line"></span><br><span class="line">#输出： [&apos;1liangxi&apos;, &apos;Alex&apos;, &apos;Jerry&apos;]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>pop( )</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">names = [&quot;1liangxi&quot;,&quot;Alex&quot;,&quot;Tom&quot;,&quot;Jerry&quot;]</span><br><span class="line"></span><br><span class="line">print(names.pop( )) #删除最后一个元素并返回该元素</span><br><span class="line">print(names)</span><br><span class="line"></span><br><span class="line">print(names.pop(1)) #删除列表中下标为3的元素并放回该元素</span><br><span class="line">print(names)</span><br><span class="line"></span><br><span class="line">#输出：</span><br><span class="line">#Jerry</span><br><span class="line">#[&apos;1liangxi&apos;, &apos;Alex&apos;, &apos;Tom&apos;]</span><br><span class="line">#Alex</span><br><span class="line">#[&apos;1liangxi&apos;, &apos;Tom&apos;]</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="7、扩展"><a href="#7、扩展" class="headerlink" title="7、扩展"></a>7、扩展</h4><p>扩展是将两个列表合并起来变成一个列表</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">names = [“1liangxi”,”Alex”,”Tom”,”Jerry”]</span><br><span class="line"></span><br><span class="line">names.extend([1,2,3])</span><br><span class="line"></span><br><span class="line">#输出:[&apos;1liangxi&apos;, &apos;Alex&apos;, &apos;Tom&apos;, &apos;Jerry&apos;, 1, 2, 3]</span><br></pre></td></tr></table></figure>
+<h4 id="8、拷贝（列表中自带的copy为浅copy）"><a href="#8、拷贝（列表中自带的copy为浅copy）" class="headerlink" title="8、拷贝（列表中自带的copy为浅copy）"></a>8、拷贝（列表中自带的copy为浅copy）</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">names = [“1liangxi”,”Alex”,”Tom”,”Jerry”]</span><br><span class="line"></span><br><span class="line">names_copy = names.copy()</span><br><span class="line"></span><br><span class="line">print(“names:”,names)</span><br><span class="line"></span><br><span class="line">print(“names_copy”,names_copy)</span><br><span class="line"></span><br><span class="line">#输出：</span><br><span class="line">#names: [&apos;1liangxi&apos;, &apos;Alex&apos;, &apos;Tom&apos;, &apos;Jerry&apos;]</span><br><span class="line">#names_copy [&apos;1liangxi&apos;, &apos;Alex&apos;, &apos;Tom&apos;, &apos;Jerry&apos;]</span><br></pre></td></tr></table></figure>
+<h4 id="9、统计"><a href="#9、统计" class="headerlink" title="9、统计"></a>9、统计</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">names = [&quot;1liangxi&quot;,&quot;Alex&quot;,&quot;Tom&quot;,&quot;Jerry&quot;,&quot;1liangxi&quot;]</span><br><span class="line"></span><br><span class="line">print(names.count(&quot;1liangxi&quot;))#统计该列表中出现多少次该元素。</span><br></pre></td></tr></table></figure>
+<h4 id="10、排序"><a href="#10、排序" class="headerlink" title="10、排序"></a>10、排序</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">names = [&quot;1liangxi&quot;,&quot;3Alex&quot;,&quot;4Tom&quot;,&quot;2Jerry&quot;]</span><br><span class="line">names.sort()#升序排序</span><br><span class="line">print(names)</span><br><span class="line"></span><br><span class="line">#输出:[&apos;1liangxi&apos;, &apos;2Jerry&apos;, &apos;3Alex&apos;, &apos;4Tom&apos;]</span><br></pre></td></tr></table></figure>
+<p>Python3里不允许不同数据类型进行排序</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">names = [&quot;1liangxi&quot;,&quot;3Alex&quot;,&quot;4Tom&quot;,&quot;2Jerry&quot;,1,2,3]</span><br><span class="line">names.sort()</span><br><span class="line">print(names)</span><br></pre></td></tr></table></figure>
+<p><img src="https://images2017.cnblogs.com/blog/1252353/201710/1252353-20171019002557756-1597764023.png" alt="img"></p>
+<h4 id="11、翻转"><a href="#11、翻转" class="headerlink" title="11、翻转"></a>11、翻转</h4><p>将列表反转</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">names = [&quot;1liangxi&quot;,&quot;3Alex&quot;,&quot;4Tom&quot;,&quot;2Jerry&quot;,1,2,3]</span><br><span class="line"></span><br><span class="line">names.reverse()</span><br><span class="line"></span><br><span class="line">print(names)</span><br><span class="line"></span><br><span class="line">#输出：[3, 2, 1, &apos;2Jerry&apos;, &apos;4Tom&apos;, &apos;3Alex&apos;, &apos;1liangxi&apos;]</span><br></pre></td></tr></table></figure>
+<h4 id="12、获取下标"><a href="#12、获取下标" class="headerlink" title="12、获取下标"></a>12、获取下标</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">names = [“1liangxi”,”Alex”,”Tom”,”Jerry”] #若有相同元素，只返回找到的第一个元素的下标。若不在，则会报错。</span><br><span class="line"></span><br><span class="line">print(names.index(“Tom”))</span><br><span class="line"></span><br><span class="line">#输出:2</span><br></pre></td></tr></table></figure>
+<h2 id="二、元组"><a href="#二、元组" class="headerlink" title="二、元组"></a>二、<strong>元组</strong></h2><p>元组内的元素是使用( )括起来的，元组一旦创立便不能修改。</p>
+<h4 id="1、统计"><a href="#1、统计" class="headerlink" title="1、统计"></a>1、统计</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">names = (“1liangxi”,”Alex”,”Tom”,”Jerry”,1liangxi)</span><br><span class="line"></span><br><span class="line">print(name.count(“1liangxi”))</span><br><span class="line"></span><br><span class="line">#输出:2</span><br></pre></td></tr></table></figure>
+<h4 id="2、获取下标"><a href="#2、获取下标" class="headerlink" title="2、获取下标"></a>2、获取下标</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">names = (“1liangxi”,”Alex”,”Tom”,”Jerry”)</span><br><span class="line"></span><br><span class="line">print(names.index(“1liangxi”))</span><br><span class="line"></span><br><span class="line">#输出：0</span><br></pre></td></tr></table></figure>
+<h2 id="三、字符串的操作"><a href="#三、字符串的操作" class="headerlink" title="三、字符串的操作"></a>三、<strong>字符串的操作</strong></h2><p>字符串是不可以进行任何修改的，就算是变大写也是全部覆盖。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">name.capitalize()  #首字母大写</span><br><span class="line"></span><br><span class="line">name.casefold()   #大写全部变小写</span><br><span class="line"></span><br><span class="line">name.center(50,&quot;-&quot;)  #输出50个字符，将name放在中间，剩下的位置用’-’补齐</span><br><span class="line"></span><br><span class="line">name.count(&apos;1&apos;) #统计l在name里出现了多少次</span><br><span class="line"></span><br><span class="line">name.encode()  #将字符串编码成bytes格式</span><br><span class="line"></span><br><span class="line">name.endswith(&quot;xi&quot;)  #判断字符串是否以xi结尾</span><br><span class="line"></span><br><span class="line">&quot;Alex\tLi&quot;.expandtabs(10) #输出&apos;Alex      Li&apos;， 将\t转换成多长的空格</span><br><span class="line"></span><br><span class="line">name.find(&apos;A&apos;) #查找A,找到返回其索引， 找不到返回-1</span><br><span class="line"></span><br><span class="line">name.index(‘a’) #返回a所在字符串的索引</span><br><span class="line"></span><br><span class="line">name.isdigit() #该字符串是否为整数</span><br><span class="line"></span><br><span class="line">name.split(“,”) #以’,’为分隔符分隔，并将该分隔符删除</span><br><span class="line"></span><br><span class="line">name.strip( ) #删除字符串后的空格或换行符</span><br></pre></td></tr></table></figure>
+<p>format(格式化输出): </p>
+<p>使用{}占位</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">msg = “my name is &#123;&#125;,and age is&#123;&#125;”</span><br><span class="line"></span><br><span class="line">print(msg.format(“1laingxi”,”22”))</span><br><span class="line"></span><br><span class="line">#输出：my name is 1laingxi,and age is22</span><br></pre></td></tr></table></figure>
+<p>在{}中填入变量，再在format()中填入相同位置的变量</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="number">1l</span>iangxi</span><br><span class="line"></span><br><span class="line">age = <span class="number">22</span></span><br><span class="line"></span><br><span class="line">msg = “my name <span class="keyword">is</span> &#123;name&#125;,<span class="keyword">and</span> age <span class="keyword">is</span>&#123;age&#125;”</span><br><span class="line"></span><br><span class="line">msg.format(name,age)</span><br><span class="line"></span><br><span class="line"><span class="comment">#输出：my name is 1liangxi,and age is22</span></span><br></pre></td></tr></table></figure>
+<p>format_map()：</p>
+<p>参数为字典，不过老师说没什么用。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">msg = “my name is &#123;name&#125;,and age is&#123;age&#125;”</span><br><span class="line"></span><br><span class="line">msg.format_map(&#123;&apos;name&apos;:&apos;1liangxi&apos;,&apos;age&apos;:22&#125;)</span><br><span class="line"></span><br><span class="line">#输出：my name is 1laingxi,and age is22</span><br></pre></td></tr></table></figure>
+<h2 id="四、字典操作"><a href="#四、字典操作" class="headerlink" title="四、字典操作"></a>四、<strong>字典操作</strong></h2><p>字典是用{ }括起来的一种键值对的数据类型，字典的意思就和字面意思一样，通过键可以查找到值。</p>
+<p>字典是无序的</p>
+<p>key（键）必须是唯一的，所以字典并不会有重复的键。但值可以有相同。</p>
+<p>eg:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">info = &#123;&quot;stu001&quot;:&quot;1liangxi&quot;,&quot;stu002&quot;:&quot;Tom&quot;,&quot;stu003&quot;:&quot;Jerry&quot;&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="1、增加"><a href="#1、增加" class="headerlink" title="1、增加"></a>1、增加</h4><p>增加直接写上键值对就是了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">info[“stu004”] = “Jack”</span><br><span class="line"></span><br><span class="line">print(info)</span><br><span class="line"></span><br><span class="line">#输出：&#123;&apos;stu001&apos;: &apos;1liangxi&apos;, &apos;stu002&apos;: &apos;Tom&apos;, &apos;stu003&apos;: &apos;Jerry&apos;, &apos;stu004&apos;: &apos;Jack&apos;&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="2、修改"><a href="#2、修改" class="headerlink" title="2、修改"></a>2、修改</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">info[“stu003”] = “1liangxi”</span><br><span class="line"></span><br><span class="line">print(info)</span><br><span class="line"></span><br><span class="line">#输出：&#123;&apos;stu001&apos;: &apos;1liangxi&apos;, &apos;stu002&apos;: &apos;Tom&apos;, &apos;stu003&apos;: &apos;1liangxi&apos;&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="3、删除"><a href="#3、删除" class="headerlink" title="3、删除"></a>3、删除</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">info = &#123;&quot;stu001&quot;:&quot;1liangxi&quot;,&quot;stu002&quot;:&quot;Tom&quot;,&quot;stu003&quot;:&quot;Jerry&quot;&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>del</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">del info[&quot;stu003&quot;]</span><br><span class="line">print(info)</span><br><span class="line">#输出：&#123;&apos;stu001&apos;: &apos;1liangxi&apos;, &apos;stu002&apos;: &apos;Tom&apos;&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>pop( )</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">print(info.pop(&quot;stu002&quot;))</span><br><span class="line"></span><br><span class="line">print(info)</span><br><span class="line"></span><br><span class="line">#输出：</span><br><span class="line">#Tom</span><br><span class="line">#&#123;&apos;stu001&apos;: &apos;1liangxi&apos;, &apos;stu003&apos;: &apos;Jerry&apos;&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>popitem() 随机删除一对键值对</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">info.popitem()</span><br><span class="line"></span><br><span class="line">print(info)</span><br><span class="line"></span><br><span class="line">#</span><br><span class="line">输出：&#123;&apos;stu001&apos;: &apos;1liangxi&apos;, &apos;stu002&apos;: &apos;Tom&apos;&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="4、查找"><a href="#4、查找" class="headerlink" title="4、查找"></a>4、查找</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">info = &#123;&quot;stu001&quot;:&quot;1liangxi&quot;,&quot;stu002&quot;:&quot;Tom&quot;,&quot;stu003&quot;:&quot;Jerry&quot;&#125;</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">“stu001” in info #判断是否在字典中，该方法适用于列表，元组，字典，集合。</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">info.get(“stu001”) #参数Key,返回值为value。如果该key不存在，不会报错，放回None。</span><br></pre></td></tr></table></figure>
+<h4 id="5、其他操作"><a href="#5、其他操作" class="headerlink" title="5、其他操作"></a>5、其他操作</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">info = &#123;&quot;stu001&quot;:&quot;1liangxi&quot;,&quot;stu002&quot;:&quot;Tom&quot;,&quot;stu003&quot;:&quot;Jerry&quot;&#125;</span><br><span class="line"></span><br><span class="line">info.values( ) #返回所有value</span><br><span class="line">info.keys( ) #返回所有Key</span><br><span class="line">info.setdefault(“stu001”,”1liangxi”) #第一个参数为Key，第二个参数为key所对应的value。</span><br><span class="line">如果该Key不存在，则会创建一个新的key并对应参数中的value。如果该key存在，则value不会被替代。</span><br><span class="line"></span><br><span class="line">info.update(b) #将两个字典合在一起</span><br><span class="line">info.items( ) #将字典变成列表</span><br><span class="line">dict.fromkeys([1,2,3],&apos;testd&apos;)#通过一个列表生成默认dict,有个没办法解释的坑，少用吧这个</span><br></pre></td></tr></table></figure>
+<h4 id="6、循环字典"><a href="#6、循环字典" class="headerlink" title="6、循环字典"></a>6、循环字典</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">for key in info:</span><br><span class="line">   print(key,info[key])</span><br><span class="line">   </span><br><span class="line">for k,v in info.items(): #会先把dict转成list,数据里大时莫用</span><br><span class="line">   print(k,v)</span><br></pre></td></tr></table></figure>
+<h2 id="五、集合"><a href="#五、集合" class="headerlink" title="五、集合"></a>五、<strong>集合</strong></h2><p>集合是一种将元素用{ }括起来的一种数据类型。</p>
+<p>集合是一无序的，不重复的数据类型。</p>
+<h4 id="集合主要用于："><a href="#集合主要用于：" class="headerlink" title="集合主要用于："></a>集合主要用于：</h4><ul>
+<li>去重：把一个列表变为集合，就自动去重了。</li>
+<li>关系测试：测试两组数据之间的交集、并集、差集等关系。</li>
+</ul>
+<h4 id="常用操作："><a href="#常用操作：" class="headerlink" title="常用操作："></a>常用操作：</h4><ol>
+<li>set(列表)</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">s = set([1,3,5,7,9]) #将列表转换为集合</span><br><span class="line"></span><br><span class="line">print(s)</span><br><span class="line"></span><br><span class="line">#输出：&#123;1, 3, 5, 7, 9&#125;</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>添加</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">s = &#123;1,2,3,4,5,6&#125;</span><br><span class="line"></span><br><span class="line">s.add(7) #添加一项</span><br><span class="line"></span><br><span class="line">print(s)</span><br><span class="line"></span><br><span class="line">s.update([7,8,9,10]) #添加多项，参数为一个列表</span><br><span class="line"></span><br><span class="line">print(s)</span><br><span class="line"></span><br><span class="line">#输出</span><br><span class="line">#&#123;1, 2, 3, 4, 5, 6, 7&#125;</span><br><span class="line">#&#123;1, 2, 3, 4, 5, 6, 7, 8, 9, 10&#125;</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>删除</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">s = &#123;1,2,,3,4,5,6&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>remove( )</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">s = &#123;1,2,3,4,5,6&#125;</span><br><span class="line"></span><br><span class="line">s.remove(5) #参数为在集合中的成员，如果集合中没有该成员则会报错</span><br><span class="line"></span><br><span class="line">print(s)</span><br><span class="line"></span><br><span class="line">#输出：&#123;1, 2, 3, 4, 6&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://images2017.cnblogs.com/blog/1252353/201710/1252353-20171019004836631-684656684.png" alt="img"></p>
+</li>
+<li><p>discard( )</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">s = &#123;1,2,3,4,5,6&#125;</span><br><span class="line"></span><br><span class="line">s.discard(6) #参数为在集合中的成员，如果集合中没有该成员就do nothing，不会报错。</span><br><span class="line"></span><br><span class="line">print(s)</span><br><span class="line"></span><br><span class="line">#输出：&#123;1, 2, 3, 4, 5&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ol start="4">
+<li>并集</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">s = &#123;1,2,3,4,5&#125;</span><br><span class="line"></span><br><span class="line">s2 = &#123;3,4,5,6,7&#125;</span><br><span class="line"></span><br><span class="line">s3 = s.union(s2)  #取并集</span><br><span class="line">print(s3)</span><br><span class="line">s4 = s|s2  #取并集，效果和上面的一样</span><br><span class="line">print(s4)</span><br><span class="line"></span><br><span class="line">#输出：</span><br><span class="line">#&#123;1, 2, 3, 4, 5, 6, 7&#125;</span><br><span class="line">#&#123;1, 2, 3, 4, 5, 6, 7&#125;</span><br></pre></td></tr></table></figure>
+<ol start="5">
+<li>交集</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">s = &#123;1,2,3,4,5&#125;</span><br><span class="line"></span><br><span class="line">s2 = &#123;3,4,5,6,7&#125;</span><br><span class="line"></span><br><span class="line">s3 = s.intersection(s2)  #取交集</span><br><span class="line">print(s3)</span><br><span class="line">s4 = s&amp;s2  #取交集，效果与上面一样</span><br><span class="line">print(s4)</span><br><span class="line"></span><br><span class="line">#输出</span><br><span class="line">#&#123;3, 4, 5&#125;</span><br><span class="line">#&#123;3, 4, 5&#125;</span><br></pre></td></tr></table></figure>
+<ol start="6">
+<li>差集</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">s = &#123;1,2,3,4,5&#125;</span><br><span class="line"></span><br><span class="line">s2 = &#123;3,4,5,6,7&#125;</span><br><span class="line"></span><br><span class="line">s3 = s.difference(s2)  #取差集</span><br><span class="line"></span><br><span class="line">print(s3)</span><br><span class="line"></span><br><span class="line">s4 = s - s2  #取差集，效果与上面一样</span><br><span class="line"></span><br><span class="line">print(s4)</span><br><span class="line"></span><br><span class="line">#输出：</span><br><span class="line">#&#123;1, 2&#125;</span><br><span class="line">#&#123;1, 2&#125;</span><br></pre></td></tr></table></figure>
+<ol start="7">
+<li>对称差集</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">s = &#123;1,2,3,4,5&#125;</span><br><span class="line"></span><br><span class="line">s2 = &#123;3,4,5,6,7&#125;</span><br><span class="line"></span><br><span class="line">s3 = s.symmetric_difference(s2) #取对称差集（将相同的元素去掉再并集）</span><br><span class="line">print(s3)</span><br><span class="line">s4 = s ^ s2 #取对称差集，效果与上面相同</span><br><span class="line">print(s4)</span><br><span class="line"></span><br><span class="line">#输出：</span><br><span class="line">#&#123;1, 2, 6, 7&#125;</span><br><span class="line">#&#123;1, 2, 6, 7&#125;</span><br></pre></td></tr></table></figure>
+<ol start="8">
+<li>长度</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">s = &#123;1,2,3,4,5&#125;</span><br><span class="line"></span><br><span class="line">print(len(s))</span><br><span class="line"></span><br><span class="line">#输出：5</span><br></pre></td></tr></table></figure>
+<ol start="9">
+<li>判断是否为子集或父集</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">s = &#123;1,2,3,4,5&#125;</span><br><span class="line"></span><br><span class="line">s2 = &#123;1,2,3,4,5,6&#125;</span><br><span class="line"></span><br><span class="line">print(s.issubset(s2))  #判断s是否为s2的子集</span><br><span class="line"></span><br><span class="line">print(s.issuperset(s2))  #判断s是否为s2的父集</span><br><span class="line"></span><br><span class="line">#输出：</span><br><span class="line">#True</span><br><span class="line">#False</span><br></pre></td></tr></table></figure>
+<ol start="10">
+<li>浅复制</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">s = &#123;1,2,3,4,5&#125;</span><br><span class="line"></span><br><span class="line">s.copy( )</span><br></pre></td></tr></table></figure>
+<h2 id="六、文件操作"><a href="#六、文件操作" class="headerlink" title="六、文件操作"></a>六、<strong>文件操作</strong></h2><p>文件操作的流程：</p>
+<ul>
+<li>打开文件，得到一个文件句柄并赋值给一个变量。</li>
+<li>通过句柄对文件进行操作。</li>
+<li>关闭文件。</li>
+</ul>
+<p>打开文件的模式有：</p>
+<ol>
+<li>r，只读模式（默认）。</li>
+<li>w，只写模式。【不可读；不存在则创建；存在则删除内容；】</li>
+<li>a，追加模式。【可读；   不存在则创建；存在则只追加内容；】</li>
+<li>“+” 表示可以同时读写某个文件 </li>
+<li>r+，可读写文件。【可读；可写；可追加】</li>
+<li>w+，写读 。【存在则删除内容】</li>
+<li>a+，同a</li>
+</ol>
+<p>“U”表示在读取时，可以将 \r \n \r\n自动转换成 \n （与 r 或 r+ 模式同使用） </p>
+<ol>
+<li>rU</li>
+<li>r+U</li>
+</ol>
+<p>“b”表示处理二进制文件（如：网络传输（Python3.0网络传输只能用二进制）FTP发送上传ISO镜像文件，linux可忽略，windows处理二进制文件时需标注）</p>
+<ol>
+<li>rb</li>
+<li>wb</li>
+<li>ab</li>
+</ol>
+<h4 id="1、打开文件"><a href="#1、打开文件" class="headerlink" title="1、打开文件"></a>1、打开文件</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">open(“test”,”r+”,encoding = “utf-8”)  #第一个参数为文件名，第二个参数为打开文件格式，第三个参数为编码（若不指定默认使用系统的GBK编码打开）</span><br></pre></td></tr></table></figure>
+<h4 id="2、读取文件内容"><a href="#2、读取文件内容" class="headerlink" title="2、读取文件内容"></a>2、读取文件内容</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">f = open(“test”,”r+”,encoding = “utf-8”)  #不能把open语句放在try块里，因为当打开文件出现异常时，文件对象file_object无法执行close()方法。</span><br><span class="line"></span><br><span class="line">f.read( )  #读所有内容</span><br><span class="line"></span><br><span class="line">f.read(1024)  #读固定字节</span><br><span class="line"></span><br><span class="line">f.readline() #读一行</span><br><span class="line"></span><br><span class="line">f.readlines() #读所有行，放在一个列表里，每行作为一个元素</span><br></pre></td></tr></table></figure>
+<p>若想读取一个文件所有内容，如果文件过大，用read( )方法或readlines( )方法会一次性将内存占满，导致速度变慢。所以采用以下方法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for line in f: #内存中只有一行的数据，f被变为一个迭代器</span><br><span class="line"></span><br><span class="line">print(line)</span><br></pre></td></tr></table></figure>
+<h4 id="3、文件句柄"><a href="#3、文件句柄" class="headerlink" title="3、文件句柄"></a>3、文件句柄</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">f.seek( )方法 #设置文件句柄</span><br><span class="line">f.tell( )方法  #返回当前文件句柄位置</span><br></pre></td></tr></table></figure>
+<p><img src="https://images2017.cnblogs.com/blog/1252353/201710/1252353-20171019005735193-2004674770.png" alt="img"></p>
+<p>每次读取文件的时候，句柄位置都会发生变化，所以要想重复读取，需要使用seek( )方法设置文件句柄。</p>
+<h4 id="4、修改文件"><a href="#4、修改文件" class="headerlink" title="4、修改文件"></a>4、修改文件</h4><p>想要对一个文件进行修改，就是将文件想要修改的部分替换掉，然后后面的部分向后挤。</p>
+<p>在内存中可以这样做，但在硬盘中无法这样做。</p>
+<p>对文件修改有两种方法：</p>
+<ul>
+<li>将文件全部读入内存中，这样可以在内存中修改文件。但是这样做会给内存带来很大的负担，假若内存不够大，便会卡顿。</li>
+<li>用只读方法打开原文件，用写方法写一个新文件。每读取一行，便写入新文件中，假如遇到要修改的，就将修改后的数据写入新文件中。</li>
+</ul>
+<p>字符串替换 .replace(“被替换的文字”,”替换文字”)</p>
+<p>.encoding( )  #打印文件编码</p>
+<p>.truncate( )  #清空文件。参数为保留的字节数，不写的话全部清空。</p>
+<p>.flush( )  #将文件从缓冲区刷到硬盘，可用于做进度条。</p>
+<p>with语句  </p>
+<p>为了避免打开文件后忘记关闭，可以通过管理上下文，即：  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">with open(&apos;log&apos;,&apos;r&apos;) as f:        </span><br><span class="line">  ...</span><br></pre></td></tr></table></figure>
+<p>如此方式，当with代码块执行完毕时，内部会自动关闭并释放文件资源。</p>
+<p>在Python 2.7 后，with又支持同时对多个文件的上下文进行管理，即：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">with open(&apos;log1&apos;) as obj1, open(&apos;log2&apos;) as obj2:    </span><br><span class="line">	pass</span><br></pre></td></tr></table></figure>
+<p>虽然Python垃圾回收机制在最后会关闭文件，但假如你不关闭文件的话，这个文件对象就会一直存在内存中。</p>
+<h2 id="七、字符的编码与转码"><a href="#七、字符的编码与转码" class="headerlink" title="七、字符的编码与转码"></a>七、字符的编码与转码</h2><p><a href="http://www.cnblogs.com/yuanchenqi/articles/5956943.html" target="_blank" rel="noopener">http://www.cnblogs.com/yuanchenqi/articles/5956943.html</a></p>
+<p><a href="http://www.diveintopython3.net/strings.html" target="_blank" rel="noopener">http://www.diveintopython3.net/strings.html</a></p>
+<ol>
+<li>Python2默认的编码时ASCLL，Python3默认unicode。（改文件头（# -<em>- coding:utf-8 -</em>-）告诉解释这个代码的程序，以什么编码格式，把这段代码读入到内存，因为到了内存里，这段代码其实是以bytes二进制格式存的。）</li>
+<li>unicode 分为 utf-32(占4个字节),utf-16(占两个字节)，utf-8(占1-4个字节)， so utf-16就是现在最常用的unicode版本， 不过在文件里存的还是utf-8，因为utf8省空间。</li>
+<li>在py3中encode,在转码的同时还会把string 变成bytes类型，decode在解码的同时还会把bytes变回string</li>
+</ol>
+<p><img src="https://images2017.cnblogs.com/blog/1252353/201710/1252353-20171019005708443-1208174294.png" alt="img"></p>
+<p>encode( )都是转为byte类型</p>
+<p>在Python3中要想转为其他格式的编码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">msg = “我爱你”</span><br><span class="line"></span><br><span class="line">msg_gbk = msg.encode(“gbk”) #因为python3默认使用了Unicode编码，所以不用decode为Unicode。在Python2中需要先转为utf-8</span><br><span class="line"></span><br><span class="line">msg_gbk_to_gb2312 = msg.decode(“gbk”).encode(“gb2312”)  #先将使用gbk规则将bytes编码，再用gb2312解码。</span><br></pre></td></tr></table></figure>
+<p>要想输出中文，那字符串在编码的时候就要使用与会话编码相同的编码规则。</p>
+<p>注：</p>
+<p>（1）Python建议，一行代码别超过80行。</p>
+<p>（2）字符串前面加U代表是Unicode编码</p>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <div id="comment" style='padding:10px;' class="vcomment"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    var GUEST_INFO = ['nick','mail','link'];
+    var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+        return GUEST_INFO.indexOf(item) > -1
+    });
+    var notify = 'false' == true;
+    var verify = 'false' == true;
+    new Valine({
+        el: '.vcomment',
+        notify: notify,
+        verify: verify,
+        appId: "t1o2v9Tc5XbnMzgjLiWP6eF1-gzGzoHsz",
+        appKey: "x67M1KroF06x8LAO2VDGTMcB",
+        placeholder: "Just go go",
+        pageSize:'10',
+        avatar:'identicon',
+        lang:'zh-cn'
+    });
+</script>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2018/04/09/Python学习日记三/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2018/04/08/Python学习日记一/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/test2.jpg);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.jpg" alt="1liangxi's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        linliangxi@outlook.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2018/04/">四月 2018<span class="sidebar_archives-count">4</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/Java/">Java<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Python/">Python<span class="sidebar_archives-count">3</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Pages  -->
+    
+
+    <!-- Article Number  -->
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+        <a href="https://weibo.com" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-weibo">
+                <span class="visuallyhidden">Weibo</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/1liangxi" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+        <a href="http://www.telegram.com/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-telegram">
+                <span class="visuallyhidden">Telegram</span>
+            </button><!--
+     --></a>
+    
+    
+    <!-- V2EX -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;2017&nbsp;-<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>不知名小站
+            
+                <br>
+                
+                    Just a placeholder
+                
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?V/53wGualMuiPM3xoetD5Q==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('<link rel="stylesheet" href="/css/uc.css">');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+    
+        <script>lsloader.load("hanabi","/js/hanabi-browser-bundle.js?Pki5+pzkluqu53g+ouMWpA==", true)</script>
+    
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+        
+        
+        HanabiBrowser.start('pre code',true);
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.2 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>

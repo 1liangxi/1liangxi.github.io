@@ -45,7 +45,7 @@
     
     <title>
         
-            归档: 2018/4 | 
+            解决JSP中文传参乱码问题 | 
         
         不知名小站
     </title>
@@ -56,7 +56,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="">
-    <meta name="keywords" content="">
+    <meta name="keywords" content=",Java">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -217,7 +217,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="不知名小站">
-    <meta name="msapplication-starturl" content="http://yoursite.com/archives/2018/04/">
+    <meta name="msapplication-starturl" content="http://yoursite.com/2018/04/09/解决JSP中文传参乱码问题/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="不知名小站">
@@ -232,13 +232,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://yoursite.com/archives/2018/04/">
+    <meta property="og:url" content="http://yoursite.com/2018/04/09/解决JSP中文传参乱码问题/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="归档: 2018/4 | 不知名小站">
+    <meta property="og:title" content="解决JSP中文传参乱码问题 | 不知名小站">
     <meta property="og:image" content="/img/ico.png">
     <meta property="og:description" content="">
-    
+    <meta property="og:article:tag" content="Java"> 
 
+    
+        <meta property="article:published_time" content="Mon Apr 09 2018 01:32:51 GMT+0800">
+        <meta property="article:modified_time" content="Mon Apr 09 2018 01:35:33 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -246,7 +249,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/archives/2018/04/index.html" />
+        <link rel="canonical" href="http://yoursite.com/2018/04/09/解决JSP中文传参乱码问题/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -281,290 +284,255 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
     
 
-    <!-- Normal Post -->
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#一、URL与Get请求"><span class="post-toc-text">一、URL与Get请求</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#（1）修改TomCat配置"><span class="post-toc-text">（1）修改TomCat配置</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#（2）使用String-getBytes-Stringdecode-方法和new-String-byte-decode"><span class="post-toc-text">（2）使用String.getBytes(Stringdecode)方法和new String(byte[], decode)</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#二、Post请求"><span class="post-toc-text">二、Post请求</span></a></li></ol>
+    </ul>
     
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/04/09/解决JSP中文传参乱码问题/">解决JSP中文传参乱码问题</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            一、URL与Get请求当TomCat不设置编码时，...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/04/09/解决JSP中文传参乱码问题/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.jpg" width="44px" height="44px" alt="1liangxi's avatar">
-            </div>
-            <div>
-                <strong>1liangxi</strong>
-                <span>4月 09, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/Java/">Java</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/04/09/Python学习日记三/">Python学习日记三</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            啊啊啊啊，写博客真的好累啊。终于明白为什么程序员最讨厌的四件事就是：
-
-写文档
-别人不写文档
-写注释
-别人不写注释
-
-
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/04/09/Python学习日记三/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.jpg" width="44px" height="44px" alt="1liangxi's avatar">
-            </div>
-            <div>
-                <strong>1liangxi</strong>
-                <span>4月 09, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/Python/">Python</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/04/09/Python学习日记二/">Python学习日记二</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            这篇博客主要介绍各种常用类型（列表，元组，字符串，字典，集合）的基本操作，以及文件的操作，最后说一下字符的编码和转码。 
-主要参考Alex老师博客：
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/04/09/Python学习日记二/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.jpg" width="44px" height="44px" alt="1liangxi's avatar">
-            </div>
-            <div>
-                <strong>1liangxi</strong>
-                <span>4月 09, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/Python/">Python</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/04/08/Python学习日记一/">Python学习日记一</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            前言其实在16年以前就听说过Python，并且那时候学了一个快速教程。也就按教程写写爬虫这样子。
-其实到今天也差不多都忘光了...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/04/08/Python学习日记一/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.jpg" width="44px" height="44px" alt="1liangxi's avatar">
-            </div>
-            <div>
-                <strong>1liangxi</strong>
-                <span>4月 08, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/Python/">Python</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                解决JSP中文传参乱码问题
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>1liangxi</strong>
+        <span>4月 09, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/Java/">Java</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=解决JSP中文传参乱码问题&url=http://yoursite.com/2018/04/09/解决JSP中文传参乱码问题/index.html&pic=http://yoursite.com/img/ico.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=解决JSP中文传参乱码问题&url=http://yoursite.com/2018/04/09/解决JSP中文传参乱码问题/index.html&via=1liangxi" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/04/09/解决JSP中文传参乱码问题/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2018/04/09/解决JSP中文传参乱码问题/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
     
 </div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h2 id="一、URL与Get请求"><a href="#一、URL与Get请求" class="headerlink" title="一、URL与Get请求"></a><strong>一、URL与Get请求</strong></h2><p>当TomCat不设置编码时，默认编码为ISO-8895-1，并不支持中文。</p>
+<p>因为没有设置TomCat的编码，所以TomCat默认使用ISO-8895-1编码接收Get参数，导致乱码。</p>
+<p>解决方法如下：</p>
+<h4 id="（1）修改TomCat配置"><a href="#（1）修改TomCat配置" class="headerlink" title="（1）修改TomCat配置"></a><strong>（1）修改TomCat配置</strong></h4><p>找到TomCat的配置文件“conf/server.xml”，在  &lt;Connector port=”8082” protocol=”HTTP/1.1”  中加入  URIEncoding=”utf-8”的编码集。</p>
+<h4 id="（2）使用String-getBytes-Stringdecode-方法和new-String-byte-decode"><a href="#（2）使用String-getBytes-Stringdecode-方法和new-String-byte-decode" class="headerlink" title="（2）使用String.getBytes(Stringdecode)方法和new String(byte[], decode)"></a><strong>（2）使用String.getBytes(Stringdecode)方法和new String(byte[], decode)</strong></h4><p>String.getBytes(Stringdecode)方法会根据指定的decode编码返回某字符串在该编码下的byte数组表示。</p>
+<p>new String(byte[],decode)实际是使用指定的编码decode来将byte[]解析成字符串</p>
+<p>eg:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String user = new String(request.getParameter(&quot;user&quot;).getBytes(&quot;ISO-8895-1&quot;),&quot;utf-8&quot;)</span><br></pre></td></tr></table></figure>
+<p>即将获取回来参数以ISO-8895-1编码为字节数组，再将字节数组以utf-8的方式转为字符串。</p>
+<h2 id="二、Post请求"><a href="#二、Post请求" class="headerlink" title="二、Post请求"></a><strong>二、Post请求</strong></h2><p>使用<strong>request.setCharacterEncoding（Stringdecode）</strong>方法</p>
+<p>如果不指定编码，服务器默认使用ISO-8895-1编码。</p>
+<p>在执行setCharacterEncoding()之前，不能执行任何getParameter()。而且该方法只对Post请求有效，对Get请求无效。</p>
+<p>在执行第一个getParameter()的时候，java将会按照编码分析所有的提交内容，而后续的getParameter()不再进行分析，所以setCharacterEncoding()无效。而对于GET方法提交表单是，提交的内容在URL中，一开始就已经按照编码分析提交内容，setCharacterEncoding()自然就无效。</p>
+<p><strong>参考资料：</strong></p>
+<p><a href="http://blog.csdn.net/maxracer/archive/2010/12/14/6075057.aspx" target="_blank" rel="noopener">http://blog.csdn.net/ocean20/article/details/6312106</a></p>
+<p><a href="http://blog.csdn.net/u010648555/article/details/50011987#comments" target="_blank" rel="noopener">http://blog.csdn.net/u010648555/article/details/50011987#comments</a></p>
+<p><a href="http://www.cnblogs.com/jiayouxiage/p/6120604.html" target="_blank" rel="noopener">http://www.cnblogs.com/jiayouxiage/p/6120604.html</a></p>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <div id="comment" style='padding:10px;' class="vcomment"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    var GUEST_INFO = ['nick','mail','link'];
+    var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+        return GUEST_INFO.indexOf(item) > -1
+    });
+    var notify = 'false' == true;
+    var verify = 'false' == true;
+    new Valine({
+        el: '.vcomment',
+        notify: notify,
+        verify: verify,
+        appId: "t1o2v9Tc5XbnMzgjLiWP6eF1-gzGzoHsz",
+        appKey: "x67M1KroF06x8LAO2VDGTMcB",
+        placeholder: "Just go go",
+        pageSize:'10',
+        avatar:'identicon',
+        lang:'zh-cn'
+    });
+</script>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2018/04/09/Python学习日记三/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
