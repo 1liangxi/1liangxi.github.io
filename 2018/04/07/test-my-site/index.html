@@ -22,10 +22,10 @@
     <meta http-equiv="x-dns-prefetch-control" content="on">
 
 
+    <link rel="dns-prefetch" href="https://cdn1.lncld.net"/>
 
 
 
-        <link rel="dns-prefetch" href="https://cdn-city.livere.com"/>
 
 
 
@@ -51,7 +51,7 @@
     </title>
 
     <!-- Favicons -->
-    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon shortcut" type="image/ico" href="/img/logo-L.png">
     <link rel="icon" href="/img/favicon.png">
 
     <meta name="format-detection" content="telephone=no"/>
@@ -254,41 +254,6 @@
 
     <!-- Structured-data for SEO -->
     
-        
-
-
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "mainEntityOfPage": "http://yoursite.com/2018/04/07/test-my-site/index.html",
-    "headline": "test_my_site",
-    "datePublished": "Sat Apr 07 2018 14:34:55 GMT+0800",
-    "dateModified": "Sat Apr 07 2018 14:34:55 GMT+0800",
-    "author": {
-        "@type": "Person",
-        "name": "1liangxi",
-        "image": {
-            "@type": "ImageObject",
-            "url": "/img/avatar.png"
-        },
-        "description": "想拉屎"
-    },
-    "publisher": {
-        "@type": "Organization",
-        "name": "不知名小站",
-        "logo": {
-            "@type":"ImageObject",
-            "url": "/img/favicon.png"
-        }
-    },
-    "keywords": "",
-    "description": "",
-}
-</script>
-
-
-    
 
     <!-- Analytics -->
     
@@ -385,7 +350,7 @@
 
     <!-- Author Avatar -->
     <div id="author-avatar">
-        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+        <img src="/img/avatar.jpg" width="44px" height="44px" alt="Author Avatar"/>
     </div>
     <!-- Author Name & Date -->
     <div>
@@ -422,7 +387,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=test_my_site&url=http://yoursite.com/2018/04/07/test-my-site/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=test_my_site&url=http://yoursite.com/2018/04/07/test-my-site/index.html&pic=http://yoursite.com/img/logo-L.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -487,27 +452,28 @@
                 <!-- Post Comments -->
                 
                     
-    <!-- 使用 来必力 -->
-<div id="livere-comment">
-    <div id="lv-container" data-id="city" data-uid="MTAyMC8zNTU0MC8xMjA3Ng==">
-	<script type="text/ls-javascript" id="livere-comment-js">
-   (function(d, s) {
-       var j, e = d.getElementsByTagName(s)[0];
-       if (typeof LivereTower === 'function') { return; }
-       j = d.createElement(s);
-       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-       j.async = true;
-       e.parentNode.insertBefore(j, e);
-   })(document, 'script');
-	</script>
-</div>
-</div>
-<style>
-    #livere-comment{
-        background-color: #eee;
-        padding: 2pc;
-    }
-</style>
+    <div id="comment" style='padding:10px;' class="vcomment"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    var GUEST_INFO = ['nick','mail','link'];
+    var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+        return GUEST_INFO.indexOf(item) > -1
+    });
+    var notify = 'false' == true;
+    var verify = 'false' == true;
+    new Valine({
+        el: '.vcomment',
+        notify: notify,
+        verify: verify,
+        appId: "t1o2v9Tc5XbnMzgjLiWP6eF1-gzGzoHsz",
+        appKey: "x67M1KroF06x8LAO2VDGTMcB",
+        placeholder: "Just go go",
+        pageSize:'10',
+        avatar:'identicon',
+        lang:'zh-cn'
+    });
+</script>
 
                 
             </div>
@@ -545,7 +511,7 @@
 <aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
     <div id="sidebar-main">
         <!-- Sidebar Header -->
-        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+        <div class="sidebar-header header-cover" style="background-image: url(/img/test2.jpg);">
     <!-- Top bar -->
     <div class="top-bar"></div>
 
@@ -560,7 +526,7 @@
 
     <!-- Sidebar Avatar -->
     <div class="sidebar-image">
-        <img src="/img/avatar.png" alt="1liangxi's avatar">
+        <img src="/img/avatar.jpg" alt="1liangxi's avatar">
     </div>
 
     <!-- Sidebar Email -->
@@ -576,15 +542,6 @@
     <!-- User dropdown  -->
     <li class="dropdown">
         <ul id="settings-dropdown" class="dropdown-menu">
-            
-                <li>
-                    <a href="#" target="_blank" title="Email Me">
-                        
-                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
-                        
-                        Email Me
-                    </a>
-                </li>
             
         </ul>
     </li>
@@ -639,16 +596,6 @@
     
 
     <!-- Pages  -->
-    
-        <li>
-            <a href="/about" title="About">
-                
-                    <i class="material-icons sidebar-material-icons">person</i>
-                
-                About
-            </a>
-        </li>
-        
     
 
     <!-- Article Number  -->
@@ -725,12 +672,6 @@ It will not impact the appearance and can give developers a lot of support :)
 
     <!-- Weibo -->
     
-        <a href="111" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn footer-sns-weibo">
-                <span class="visuallyhidden">Weibo</span>
-            </button><!--
-     --></a>
-    
 
     <!-- Instagram -->
     
@@ -740,7 +681,7 @@ It will not impact the appearance and can give developers a lot of support :)
 
     <!-- Github -->
     
-        <a href="222" target="_blank">
+        <a href="https://github.com/1liangxi" target="_blank">
             <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
                 <span class="visuallyhidden">Github</span>
             </button><!--
@@ -758,12 +699,6 @@ It will not impact the appearance and can give developers a lot of support :)
 
     <!-- Telegram -->
     
-        <a href="333" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn footer-sns-telegram">
-                <span class="visuallyhidden">Telegram</span>
-            </button><!--
-     --></a>
-    
     
     <!-- V2EX -->
     
@@ -772,11 +707,11 @@ It will not impact the appearance and can give developers a lot of support :)
 
         <!--Copyright-->
         <div id="copyright">
-            Copyright&nbsp;©&nbsp;2016&nbsp;-<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>不知名小站
+            Copyright&nbsp;©&nbsp;2017&nbsp;-<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>不知名小站
             
                 <br>
                 
-                    Test the footer text
+                    Just a placeholder
                 
             
         </div>
